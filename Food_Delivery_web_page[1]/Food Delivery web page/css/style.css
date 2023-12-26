@@ -1,0 +1,159 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation: Logo and Image */
+#logo {
+    margin: 10px 10px;
+}
+
+#logo img {
+    margin: 10px 20px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Navigation: list Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Pacifico', cursive; /* Fancy font */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Hover transition */
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    height: 433px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#home::before {
+    content: " ";
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: .9;
+}
+
+#home h1,
+#home p {
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico', cursive; /* Fancy font */
+    transition: color 0.3s ease; /* Hover transition */
+}
+
+#home h1:hover,
+#home p:hover {
+    color: #ff4500; /* Change color on hover */
+}
+
+/* services section */
+.services-container {
+    margin-top: 130px;
+}
+
+#services {
+    margin: 15px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 5px 5px;
+    padding: 30px;
+    background-color: rgb(245, 241, 241);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover transition */
+}
+
+#services .box:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+#services .box img {
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 2.3rem;
+    padding: 15px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 15px;
+}
+
+.btn {
+    padding: 2px 10px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hover transition */
+}
+
+.btn:hover {
+    background-color: #ff4500; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.center {
+    text-align: center;
+}
